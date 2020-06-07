@@ -35,13 +35,15 @@ header {
 
 .sort-btn {
   border-radius: 0.25rem;
-  border: 0;
   width: 250;
   box-shadow: 0 0 2px 2px gray;
 }
 
 .create {
   justify-self: flex-end;
+  margin-left: 15px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 2px 2px gray;
 }
 
 .form-control::placeholder {

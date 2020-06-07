@@ -2,9 +2,12 @@ const mongoose = require('mongoose')
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/restaurant-list'
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
 
+mongoose.connect(process.env.MONGODB_URI, { 
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  useCreateIndex: true
+ })
 const db = mongoose.connection
 
 db.on('error', () => {

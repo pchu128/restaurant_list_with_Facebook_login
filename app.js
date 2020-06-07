@@ -7,10 +7,12 @@ const methodOverride = require('method-override')
 cosnt session = require('express-session')
 
 const routes = require('./routes')
-const port = 3000
+
+const usePassport = require('./config/passport')
 require('./config/mongoose')
 
 const app = express()
+const port = 3000
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')

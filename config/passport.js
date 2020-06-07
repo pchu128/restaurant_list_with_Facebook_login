@@ -10,7 +10,7 @@ module.exports = app => {
         if (!user) {
           return done (null, false, { message: '此信箱尚未被註冊！'})
         }
-        if (user.password !== password) => {
+        if (user.password !== password) {
           return done (null, false, { message: '使用者信箱或密碼輸入不正確！'})
         }
         return done(null, user)
@@ -19,11 +19,11 @@ module.exports = app => {
   })
   passport.serializeUser((user, done) => {
     done(null, user.id)
-  }
+  })
   passport.deserializeUser((user, done) => {
     user.findById(id)
       .lean()
       .then(user => done(null, user))
       .catch(err => done(err, null))
   })
-)}
+}

@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars')
 const restaurantList = require('./models/restaurant.js')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
-cosnt session = require('express-session')
+const session = require('express-session')
 
 const routes = require('./routes')
 

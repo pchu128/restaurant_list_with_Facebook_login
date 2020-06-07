@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/stylesheets/edit.css">
+
+<form action="/restaurants/{{ restaurant._id }}?_method=PUT" method="POST" class="d-flex flex-column">
+  
+  <h1 class="mb-1 restaurant-show-title">
+    <label for="name"></label>
+    <input type="text" placeholder="name" name="name" value="{{ restaurant.name }}">
+  </h1>
+
+  <label for="name_en" class="text-secondary">英文名稱:</label>
+  <input type="text" placeholder="name" name="name_en" value="{{ restaurant.name_en }}">
+  
+  <label for="category" class="text-secondary">類別:</label>
+  <input type="text" placeholder="name" name="category" value="{{ restaurant.category }}">
+  
+  <label for="image" class="text-secondary">圖片網址:</label>
+  <input type="text" placeholder="name" name="image" value="{{ restaurant.image }}">
+  
+  <label for="location" class="text-secondary">地點:</label>
+  <input type="text" placeholder="name" name="location" value="{{ restaurant.location }}">
+  
+  <label for="phone" class="text-secondary">電話:</label>
+  <input type="text" placeholder="name" name="phone" value="{{ restaurant.phone }}">
+  
+  <label for="google_map" class="text-secondary">Google Map:</label>
+  <input type="text" placeholder="name" name="google_map" value="{{ restaurant.google_map }}">
+  
+  <label for="rating" class="text-secondary">評價:</label>
+  <input type="text" placeholder="name" name="rating" value="{{ restaurant.rating }}">
+  
+  <label for="description" class="text-secondary">描述</label>
+  <textarea id="description" type="text" placeholder="name" name="description"> {{ restaurant.description }} </textarea>
+
+  <div class="buttons">
+    <a class="btn btn-sm btn-outline-secondary" href="/">back</a>
+    <button type="submit" class="btn btn-sm btn-outline-secondary">Save</button>
+  </div>
+
+</form>

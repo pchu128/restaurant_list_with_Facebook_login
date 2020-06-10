@@ -47,6 +47,6 @@ app.use((req, res, next) => {
 app.use(routes)
 
 // Listen the server
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`Express is running on http://localhost:${port}`)
 })

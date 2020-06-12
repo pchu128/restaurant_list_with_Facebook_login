@@ -42,11 +42,11 @@
       >
 
       {{!-- edit button --}}
-      <a class="btn btn-sm btn-outline-secondary" href="/restaurants/{{ restaurant._id }}?_method=PUT">edit</a>
+      <a class="btn btn-sm btn-outline-secondary edit-btn ml-auto" href="/restaurants/{{ restaurant._id }}?_method=PUT"><i class="fas fa-pen"></i></a>
       
       {{!-- delete button --}}
-      <button type="submit" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#target-{{ restaurant._id }}">
-        delete
+      <button type="submit" class="btn btn-sm btn-outline-secondary del-btn ml-1" data-toggle="modal" data-target="#target-{{ restaurant._id }}">
+        <i class="fas fa-trash"></i>
       </button>
       
       {{!-- Modal: delete alert --}}

@@ -7,8 +7,8 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 const SEED_USER = {
-  name: 'root',
-  email: 'root@example.com',
+  name: 'Peter',
+  email: 'Peter@example.com',
   password: '12345678'
 }
 db.once('open', () => {

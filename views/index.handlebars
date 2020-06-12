@@ -50,17 +50,20 @@
                   <i class="fas fa-utensils pr-2"></i> {{ this.category }}
                 </div>
 
-                <span class="badge badge-pill badge-danger font-weight-normal">
-                  {{ this.rating }}
-                  <i class="fas fa-star fa-xs"></i>
-                </span>
-                {{!-- edit button --}}
-                <a class="btn btn-sm btn-outline-secondary" href="./restaurants/{{ this._id }}?_method=PUT">edit</a>
+                <div class="d-flex">
+                  <span class="badge badge-pill badge-danger font-weight-normal">
+                    {{ this.rating }}
+                    <i class="fas fa-star fa-xs"></i>
+                  </span>
+                  
+                  {{!-- edit button --}}
+                  <a class="btn btn-sm btn-outline-secondary edit-btn ml-auto" href="./restaurants/{{ this._id }}?_method=PUT"><i class="fas fa-pen"></i></a>
 
-                {{!-- delete button --}}
-                <button type="submit" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#target-{{ this._id }}">
-                  delete
-                </button>
+                  {{!-- delete button --}}
+                  <button type="submit" class="btn btn-sm btn-outline-secondary del-btn ml-1" data-toggle="modal" data-target="#target-{{ this._id }}">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
 
                 {{!-- Modal: delete alert --}}
                 <div class="modal fade" id="target-{{ this._id }}" tabindex="-1" role="dialog" aria-labelledby="label-{{ this._id }}"

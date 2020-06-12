@@ -75,6 +75,10 @@ header {
   white-space:nowrap;
 }
 
+.edit-btn, .del-btn {
+  align-content: flex-end;
+}
+
 .restaurant-category {
   color: #666666;
   font-size: 0.8rem;

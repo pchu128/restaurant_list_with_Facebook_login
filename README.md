@@ -47,7 +47,11 @@ cd restaurantList-login
 //安裝npm套件
 npm install
 
-//建立種子資料（提供測試功能用、建立後可使用 信箱：root@example.com, 密碼：12345678 登入）
+//建立環境變數
+將範例 env 檔名後方的 .example 刪除
+然後填入自己的 facebook developer APP login ID & secret
+
+//建立種子資料（提供測試功能用、建立後可使用 信箱：Peter@example.com, 密碼：12345678 登入）
 npm run seed
 
 //執行專案

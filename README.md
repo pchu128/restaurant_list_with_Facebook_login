@@ -2,7 +2,7 @@
 本專案是可依每個使用者客製化使用的餐廳入口網站，可以在註冊後建立自己喜歡的餐廳清單。
 
 ## 專案首頁
-<img src="https://github.com/pchu128/restaurantList_login/blob/master/HomePage.png" width="600px" height="450px">
+<img src="https://github.com/pchu128/restaurantList_login/blob/master/IndexScreenShot.png" width="600px" height="450px">
 
 ## 功能導覽
 - 登入頁面

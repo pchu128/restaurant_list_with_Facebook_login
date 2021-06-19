@@ -1,7 +1,11 @@
 # restaurantList-login
-本專案是可依每個使用者客製化使用的餐廳入口網站，可以在註冊後建立自己喜歡的餐廳清單。
+本專案是可依每個使用者客製化使用的餐廳入口網站，
+可以使用 Facebook 直接註冊登入，登入後可以建立自己喜歡的餐廳清單。
 
 ## 專案首頁
+
+https://gentle-gorge-11070.herokuapp.com/users/login
+
 <img src="https://github.com/pchu128/restaurantList_login/blob/master/IndexScreenShot.png" width="600px" height="450px">
 
 ## 功能導覽
